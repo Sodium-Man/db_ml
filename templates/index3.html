@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Monitoring Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add custom styles here */
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background: #3498db; /* Navbar color */
+            color: #fff;
+            text-align: center; /* Center-align the title */
+            font-size: 28px; /* Larger font size for title */
+            padding: 20px 0; /* Add padding to navbar */
+            border-bottom: 4px solid #2980b9; /* Add border at bottom */
+        }
+        .sidebar {
+            background: #2c3e50; /* Sidebar color */
+            color: #fff;
+            height: 100vh;
+            padding-top: 20px; /* Add padding to the top of the sidebar */
+        }
+        .nav-link {
+            color: #fff !important;
+            transition: all 0.3s ease; /* Add transition effect */
+        }
+        .nav-link:hover {
+            background-color: #2980b9; /* Change background color on hover */
+            border-radius: 5px; /* Add border radius on hover */
+        }
+        .main-content {
+            padding: 50px;
+            text-align: center;
+        }
+        .jumbotron {
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1">Gas Monitoring</span>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">View Tracking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://127.0.0.1:5000">Tabled data</a> <!-- Link to app.py -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Graph view</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 main-content">
+                <!-- Add your content here -->
+                <div class="jumbotron">
+                    <h1>Welcome to Gas Monitoring Dashboard</h1>
+                    <p class="lead">This is a simple dashboard for monitoring gas data.</p>
+                    <p class="lead">Click on the options in the sidebar to view different sections.</p>
+                    <p class="lead">To view the gas monitoring application, <a href="http://127.0.0.1:5000">click here</a>.</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (optional, only needed if you're using Bootstrap features) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
